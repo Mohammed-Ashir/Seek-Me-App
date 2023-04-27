@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "8276d71c-8b42-4183-a660-e0ebab2d92c9",
+		"name": "SeekMe clumpcoder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "/admin/catagoryCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "catagoryName",
+									"value": "AC Repair Services",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Dell/Desktop/asciifull.gif"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://3.109.48.115:5500/admin/catagoryCreate",
+							"protocol": "http",
+							"host": [
+								"3",
+								"109",
+								"48",
+								"115"
+							],
+							"port": "5500",
+							"path": [
+								"admin",
+								"catagoryCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/catagoryList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/admin/catagoryList",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"admin",
+								"catagoryList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin/salonForWomenCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "salonForWomenName",
+									"value": "Facial for glow",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Dell/Desktop/asciifull.gif"
+								},
+								{
+									"key": "catagoryId",
+									"value": "62e0e8d7104c82d286121077",
+									"type": "default"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5500/admin/salonForWomenCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"admin",
+								"salonForWomenCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin/salonForWomenList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/admin/salonForWomenList",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"admin",
+								"salonForWomenList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin/subSalonforWomenCreate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "specialID",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "subSalonforWomenName",
+									"value": "Goldfacial",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "default"
+								},
+								{
+									"key": "rating",
+									"value": "4.3",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Some text",
+									"type": "default"
+								},
+								{
+									"key": "subCatagoryId",
+									"value": "62e0f67192ba9413da1d1047",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Dell/Desktop/asciifull.gif"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5500/admin/subSalonforWomenCreate",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"admin",
+								"subSalonforWomenCreate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "user/getCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/user/getCategories",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"getCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/getsubcategories/salonForWomen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/user/getsubcategories/salonForWomen",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"getsubcategories",
+								"salonForWomen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/getsubsubcategories/subSalonforWomen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/user/getsubsubcategories/subSalonforWomen",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"getsubsubcategories",
+								"subSalonforWomen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contactNo\":\"1234567890\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5500/user/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"contactNo\":\"1234567890\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5500/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/user/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"contactNo\":\"1234567890\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:5500/user/login",
+									"host": [
+										"localhost"
+									],
+									"port": "5500",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "211"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d3-ulZLrP2P0503EO/TWT1oPudbO6k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Jul 2022 09:42:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0Tm8iOiIxMjM0NTY3ODkwIiwidXNlcklkIjoiNjJlMjMyMzRjYjEzN2ZhMzY0ZTNiM2Q4IiwiaWF0IjoxNjU5MDAxMzQ3LCJleHAiOjE2NTkwMDg1NDd9.i2mbKToztbfO-UqXDOSZrtH9873UNN1pY3xkAzjcCX8\""
+						}
+					]
+				},
+				{
+					"name": "user/addtocart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0Tm8iOiIxMjM0NTY3ODkwIiwidXNlcklkIjoiNjJlMjMyMzRjYjEzN2ZhMzY0ZTNiM2Q4IiwiaWF0IjoxNjU5MDAxMzQ3LCJleHAiOjE2NTkwMDg1NDd9.i2mbKToztbfO-UqXDOSZrtH9873UNN1pY3xkAzjcCX8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subsubCategoryId\":\"62e10c6537c22a79b2cfce1a\",\r\n      \"subCatagoryId\":\"62e0f67192ba9413da1d1047\",\r\n      \"subsubCategory\":\"subSalonforWomen\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5500/user/addtocart",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"addtocart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/getcart",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0Tm8iOiIxMjM0NTY3ODkwIiwidXNlcklkIjoiNjJlMjMyMzRjYjEzN2ZhMzY0ZTNiM2Q4IiwiaWF0IjoxNjU5MDAxMzQ3LCJleHAiOjE2NTkwMDg1NDd9.i2mbKToztbfO-UqXDOSZrtH9873UNN1pY3xkAzjcCX8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5500/user/getcart",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"user",
+								"getcart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
